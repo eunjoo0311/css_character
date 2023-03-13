@@ -1,38 +1,86 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
 body {
-  background: #eee69a;
+  background: #409d76;
 }
 .container {
-  position: fixed;
-  left: 50%;
+  position: absolute;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
-.head {
-  width: 314px;
-  height: 285px;
-  border-radius: 50%;
+.container .ear {
+  position: absolute;
+  top: 20;
+  border-radius: 100%;
+  width: 43px;
+  height: 39px;
   background: #d9d9d9;
 }
-.eyes {
-  text-align: center;
-  padding-top: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.eye {
+.face {
   border-radius: 50%;
+  width: 314px;
+  height: 285px;
+
+  background: #d9d9d9;
+}
+.container .ear.left {
+  left: 30px;
+}
+.container .ear.right {
+  right: 30px;
+}
+.container .eyebrow {
+  position: absolute;
+  top: 88px;
+  width: 46px;
+  height: 6px;
   background: #000;
-  width: 29px;
-  height: 28px;
-  position: relative;
-  display: flex;
 }
-.eye::before {
-  content: " ";
-  background-color: white;
-  width: 9px;
+
+.container .eyebrow.left {
+  left: 77px;
+}
+
+.container .eyebrow.right {
+  right: 77px;
+}
+.container .eye {
+  position: absolute;
+  top: 102px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  background: #000;
+  transition: all 0.2s;
+}
+
+.container .eye.left {
+  left: 91px;
+}
+
+.container .eye.right {
+  right: 91px;
+}
+.container .se {
+  position: absolute;
+  width: 10px;
   height: 10px;
-  border-radius: 50%;
+  left: 4px;
+  top: 6px;
+  border-radius: 100%;
+  background: #fff;
+}
+.container .ball {
+  position: absolute;
+  width: 369px;
+  height: 143px;
+  top: 142px;
+  left: 50%;
+  background: #ffffff;
+  border-radius: 600px;
 }
