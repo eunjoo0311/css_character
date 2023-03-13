@@ -1,0 +1,38 @@
+body {
+  background: #eee69a;
+}
+.container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.head {
+  width: 314px;
+  height: 285px;
+  border-radius: 50%;
+  background: #d9d9d9;
+}
+.eyes {
+  text-align: center;
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.eye {
+  border-radius: 50%;
+  background: #000;
+  width: 29px;
+  height: 28px;
+  position: relative;
+  display: flex;
+}
+.eye::before {
+  content: " ";
+  background-color: white;
+  width: 9px;
+  height: 10px;
+  border-radius: 50%;
+}
